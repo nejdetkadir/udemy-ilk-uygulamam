@@ -1,0 +1,8 @@
+<p class="notice"><%= notice %></p>
+
+<h1>todos index page</h1>
+<%= link_to "New todo", new_todo_path %>
+<hr>
+<%- @todos.each do |t|%>
+  <p><%= t.body %> <%= link_to "Show", todo_path(t) %> <%= link_to "Destory", todo_path(t), method: :delete %><%= link_to "Edit", edit_todo_path(t) %></p>
+<% end %>

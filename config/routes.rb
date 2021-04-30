@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :cars
+  root to: "pages#index"
+  get '/about_us', to: "pages#about_us"
+  # xxxxxxx/about_us
 
-  # localhost:3000/cars/9
+  resources :todos
 end

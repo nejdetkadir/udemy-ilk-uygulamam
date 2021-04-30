@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
+ .notice{
+   color: green;
+   font-size: larger;
+ }
+
+ li.error{
+   color: red;
+   font-size: larger;
+ }

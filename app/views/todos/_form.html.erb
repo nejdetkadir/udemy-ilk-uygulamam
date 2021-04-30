@@ -1,0 +1,18 @@
+<%= form_with(model: todo) do |f| %>
+
+<% if todo.errors.any? %>
+  <ul>
+  <% todo.errors.each do |error| %>
+    <li class="error"><%= error.full_message %></li>
+  <% end %>
+  </ul>
+<% end %>
+
+<%= f.label :body %>
+<%= f.text_area :body%>
+
+<hr>
+
+<%= f.submit %>
+
+<% end %>
